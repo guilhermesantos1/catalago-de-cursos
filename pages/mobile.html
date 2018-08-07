@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="./css/_stylePaginaInterna.css">
+
+    <script type="text/javascript">
+
+        $(function() {
+
+            var filterList = {
+
+                init: function() {
+
+                    // MixItUp plugin
+                    // http://mixitup.io
+                    $('#portfoliolist').mixItUp({
+                        selectors: {
+                            target: '.portfolio'
+                        },
+                        load: {
+                            filter: 'all'
+                        },
+                        animation: {
+                            animateResizeContainer: false,
+                            duration: 500,
+                            nudge: true,
+                            reverseOut: false,
+                            effects: "fade scale(0.01)"
+                        }
+                    });
+
+                }
+
+            };
+
+            // Run the show!
+            filterList.init();
+        });
+
+        // $(document).ready(function(){
+        //
+        // });
+        $(document).ready(function() {
+          $('.menu-drop').hide();
+          $(".menu").click(function() {
+            // console.log("to aqui");
+            $('.menu-drop').slideToggle(600);
+          });
+          $('.home').click(function() {
+            location.reload();
+          });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container container-picolo">
+        <div class="row justify-content-start">
+            <div class="col-md-3 marginMenu">
+              <div class="row" style="background-image: url(./img/menu/fundoMenu.png);height:61px;width:263px;">
+                <div class="btnHome">
+                  <img src="./img/menu/logo_ted.png" alt="" class="home" style="cursor: pointer;">
+                </div>
+                <div class="btnMenu">
+                  <img src="./img/menu/menu_icon.png" alt="" class="menu">
+                </div>
+            </div>
+              <!-- <img class="img-fluid menu" src="./img/MenuFechado.png" /> -->
+
+                <div class="menu-drop" >
+                  <div class="menu-row">
+                    <img src="./img/menu/bt1normal.png" alt="Publicações Eletrônicas">
+                  </div>
+                  <div class="menu-row">
+                    <img src="./img/menu/bt2normal.png" alt="Publicações Eletrônicas">
+                  </div>
+                  <div class="menu-row">
+                    <img src="./img/menu/bt3normal.png" alt="Publicações Eletrônicas">
+                  </div>
+                  <div class="menu-row">
+                    <img src="./img/menu/bt4normal.png" alt="Publicações Eletrônicas">
+                  </div>
+                  <div class="menu-row">
+                    <img src="./img/menu/bt5normal.png" alt="Publicações Eletrônicas">
+                  </div>
+                  <div class="menu-row">
+                    <img src="./img/menu/bt6normal.png" alt="Publicações Eletrônicas">
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center tal">
+            <div class="col-md-8">
+                <div class="imgTitulo">
+                    <img class="img-fluid" src="./img/pages/mobile/Titulo.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-11 col-lg-10">
+                <div id="portfoliolist">
+                        <!-- <div class="portfolio cat3">
+                            <div class="portfolio-content" data-linkOpen="#">
+                                <img class="img-fluid" src="./img/pages/mobile/Curso1.png" />
+                                <div class="portifolio-title light">
+                                    <h4>Porto Seguro Táxi</h4>
+                                    <button class="btnVer light" type="button">VER</button>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="portfolio cat2">
+                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/angola/unidade-16/ciencias/">
+                                <img class="img-fluid" src="./img/pages/mobile/Curso2.png" />
+                                <div class="portifolio-title light">
+                                    <h4>Localização Temporal<br>e Espacial - ProFuturo</h4>
+                                    <button class="btnVer light" type="button">VER</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio cat2">
+                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/matematica-financeira/v01/">
+                                <img class="img-fluid" src="./img/pages/mobile/Curso3.png" />
+                                <div class="portifolio-title light">
+                                    <h4>Matemática<br>Financeira - Deloitte</h4>
+                                    <button class="btnVer light" type="button">VER</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="portfolio cat3">
+                            <div class="portfolio-content" data-linkOpen="#">
+                                <img class="img-fluid" src="./img/pages/mobile/Curso4.png" />
+                                <div class="portifolio-title light">
+                                    <h4>Porto Seguro Moto</h4>
+                                    <button class="btnVer light" type="button">VER</button>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="portfolio cat3">
+                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/odontoprev/bin/">
+                                <img class="img-fluid" src="./img/pages/mobile/Curso5.png" />
+                                <div class="portifolio-title light">
+                                    <h4>Sustentabilidade<br>Odontoprev</h4>
+                                    <button class="btnVer light" type="button">VER</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio cat1">
+                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/historia-em-quadrinhos/v01/">
+                                <img class="img-fluid" src="./img/pages/mobile/Curso6.png" />
+                                <div class="portifolio-title light">
+                                    <h4>História em Quadrinhos<br>Escolas Rurais</h4>
+                                    <button class="btnVer light" type="button">VER</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio cat3">
+                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/automovel-itau/v01/curso/">
+                                <img class="img-fluid" src="./img/pages/mobile/Curso7.png" />
+                                <div class="portifolio-title light">
+                                    <h4>Automóvel Itaú</h4>
+                                    <button class="btnVer light" type="button">VER</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio cat3">
+                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/ps-premium/curso/">
+                                <img class="img-fluid" src="./img/pages/mobile/Curso8.png" />
+                                <div class="portifolio-title light">
+                                    <h4>Porto Seguro<br>Auto Premium</h4>
+                                    <button class="btnVer light" type="button">VER</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- fim class portifoliolist -->
+            </div>
+
+            <div class="col-md-1">
+                <div id="filters" class="light">
+                    <div class="filter active" data-filter="all">TODOS</div>
+                    <div class="filter" data-filter=".cat1">BAIXA</div>
+                    <div class="filter" data-filter=".cat2">MÉDIA</div>
+                    <div class="filter" data-filter=".cat3">ALTA</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <!-- fim div container -->
+</body>
+
+</html>

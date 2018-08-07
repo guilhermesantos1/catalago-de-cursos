@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="./css/_stylePaginaInterna.css">
+
+    <script type="text/javascript">
+        $(function() {
+            var filterList = {
+                init: function() {
+                    // MixItUp plugin
+                    // http://mixitup.io
+                    $('#portfoliolist').mixItUp({
+                        selectors: {
+                            target: '.portfolio',
+                            filter: '.filter'
+                        },
+                        load: {
+                            filter: 'all'
+                        },
+                        animation: {
+                            animateResizeContainer: false,
+                            duration: 500,
+                            nudge: true,
+                            reverseOut: false,
+                            effects: "fade scale(0.01)"
+                        }
+                    });
+                }
+            };
+
+            // Run the show!
+            filterList.init();
+        });
+
+        // assim que carregar a pagina
+        $(document).ready(function() {
+            $('.menu-drop').hide();
+            $(".menu").click(function() {
+                // console.log("to aqui");
+                $('.menu-drop').slideToggle(600);
+            });
+
+            $('.home').click(function() {
+                location.reload();
+            });
+            $("#menuBtn").click(function() {
+                console.log("dsadsa");
+            });
+        });
+
+        var menu = document.getElementsByClassName('menu-drop');
+
+    </script>
+</head>
+
+<body>
+    <div class="container container-picolo">
+        <div class="row justify-content-start">
+            <div class="col-md-3 marginMenu">
+                <div class="row" style="background-image: url(./img/menu/fundoMenu.png);height:61px;width:263px;">
+                    <div class="btnHome">
+                        <img src="./img/menu/logo_ted.png" alt="" class="home" style="cursor: pointer;">
+                    </div>
+                    <div class="btnMenu">
+                        <img src="./img/menu/menu_icon.png" alt="" class="menu">
+                    </div>
+                </div>
+
+                <div class="menu-drop">
+                    <div class="menu-row">
+                        <img src="./img/menu/bt1normal.png">
+                    </div>
+                    <div class="menu-row">
+                        <img src="./img/menu/bt2normal.png">
+                    </div>
+                    <div class="menu-row">
+                        <img src="./img/menu/bt3normal.png">
+                    </div>
+                    <div class="menu-row">
+                        <img src="./img/menu/bt4normal.png">
+                    </div>
+                    <div class="menu-row">
+                        <img src="./img/menu/bt5normal.png">
+                    </div>
+                    <div class="menu-row">
+                        <img src="./img/menu/bt6normal.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="imgTitulo">
+                    <img class="img-fluid" src="./img/pages/videos/Titulo.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-11 col-lg-10">
+                <div id="portfoliolist">
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/natura-maquiagem/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso1.png" />
+                            <div class="portifolio-title light">
+                                <h4>Natura Maquiagem</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/genetica-grupos-sanguineos/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso2.png" />
+                            <div class="portifolio-title light">
+                                <h4>Grupos Sanguíneos - <br>STEMbyMe</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/projeto-tecnico/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso3.png" />
+                            <div class="portifolio-title light">
+                                <h4>Projeto Técnico</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/pronon/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso4.png" />
+                            <div class="portifolio-title light">
+                                <h4>PRONON - ICESP</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/trigonometria-stembyme/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso5.png" />
+                            <div class="portifolio-title light">
+                                <h4>Trigonometria<br>STEMbyMe</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/escola-de-contas/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso6.png" />
+                            <div class="portifolio-title light">
+                                <h4>Escola de Contas</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/projeto-new/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso7.png" />
+                            <div class="portifolio-title light">
+                                <h4>Projeto New</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/bons-comportamentos-kpmg/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso8.png" />
+                            <div class="portifolio-title light">
+                                <h4>Bons Comportamentos<br>KPMG</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat3">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/formatacao/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso9.png" />
+                            <div class="portifolio-title light">
+                                <h4>Formatação - Vivo</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat3">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/o-que-voce-aprendeu-hoje/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso10.png" />
+                            <div class="portifolio-title light">
+                                <h4>O que você aprendeu<br>hoje? - KPMG</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat3">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/escola-de-pereciveis-walmart/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso11.png" />
+                            <div class="portifolio-title light">
+                                <h4>Escola de Perecíveis<br>Walmart</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/anatomia-e-fisiologia-dos-aparelhos-reprodutores/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso12.png" />
+                            <div class="portifolio-title light">
+                                <h4>Aparelhos Reprodutores - <br>STEMbyMe</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/cartao-marisa-itaucard/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso13.png" />
+                            <div class="portifolio-title light">
+                                <h4>Cartão Marisa<br>Itaucard</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/conhecimento-boticario/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso14.png" />
+                            <div class="portifolio-title light">
+                                <h4>Conhecimento<br>Boticário</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/masterx-seed/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso15.png" />
+                            <div class="portifolio-title light">
+                                <h4>MasterX-Seed - BASF</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/elastopave/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso16.png" />
+                            <div class="portifolio-title light">
+                                <h4>Elastopave - BASF</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat3">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/gestor-de-canal-da-vivo/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso17.png" />
+                            <div class="portifolio-title light">
+                                <h4>Gestor de<br>Canal da Vivo</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat3">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/remuneracao-telefonica/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso18.png" />
+                            <div class="portifolio-title light">
+                                <h4>Remuneração<br>Telefônica</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat5">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/ra/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso19.png" />
+                            <div class="portifolio-title light">
+                                <h4>Realidade<br>Aumentada(RA)</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat4">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/rv/v01/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso20.png" />
+                            <div class="portifolio-title light">
+                                <h4>Realidade<br>Virtual(RV)</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- fim div portifoliolist -->
+            </div>
+            <!-- fim div col -->
+
+            <div class="col-md-1">
+                <div id="filters" class="light">
+                    <div class="filter active" data-filter="all">TODOS</div>
+                    <div class="filter" data-filter=".cat1">VÍDEOAULAS</div>
+                    <div class="filter" data-filter=".cat2">ANIMAÇÕES</div>
+                    <div class="filter" data-filter=".cat3">VIDEOSCRIBES</div>
+                    <div class="filter" data-filter=".cat4">RV</div>
+                    <div class="filter" data-filter=".cat5">RA</div>
+                </div>
+            </div>
+
+        </div>
+        <!-- fim div row -->
+    </div>
+    <!-- fim div container -->
+</body>
+
+</html>

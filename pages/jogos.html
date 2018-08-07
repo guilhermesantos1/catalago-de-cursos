@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="./css/_stylePaginaInterna.css">
+
+    <!-- <script type="text/javascript" src="./js/main.js"></script> -->
+    <script type="text/javascript">
+        $(function() {
+            var filterList = {
+                init: function() {
+                    // MixItUp plugin
+                    // http://mixitup.io
+                    $('#portfoliolist').mixItUp({
+                        selectors: {
+                            target: '.portfolio',
+                            filter: '.filter'
+                        },
+                        load: {
+                            filter: 'all'
+                        },
+                        animation: {
+                            animateResizeContainer: false,
+                            duration: 500,
+                            nudge: true,
+                            reverseOut: false,
+                            effects: "fade scale(0.01)"
+                        }
+                    });
+                }
+            };
+
+            // Run the show!
+            filterList.init();
+        });
+        $(document).ready(function() {
+          $('.menu-drop').hide();
+          $(".menu").click(function() {
+            // console.log("to aqui");
+            $('.menu-drop').slideToggle(600);
+          });
+          $('.home').click(function() {
+            location.reload();
+          });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container container-picolo">
+      <div class="row justify-content-start">
+          <div class="col-md-3 marginMenu">
+            <div class="row" style="background-image: url(./img/menu/fundoMenu.png);height:61px;width:263px;">
+              <div class="btnHome">
+                <img src="./img/menu/logo_ted.png" alt="" class="home" style="cursor: pointer;">
+              </div>
+              <div class="btnMenu">
+                <img src="./img/menu/menu_icon.png" alt="" class="menu">
+              </div>
+          </div>
+            <!-- <img class="img-fluid menu" src="./img/MenuFechado.png" /> -->
+
+              <div class="menu-drop" >
+                <div class="menu-row">
+                  <img src="./img/menu/bt1normal.png" alt="Publicações Eletrônicas">
+                </div>
+                <div class="menu-row">
+                  <img src="./img/menu/bt2normal.png" alt="Publicações Eletrônicas">
+                </div>
+                <div class="menu-row">
+                  <img src="./img/menu/bt3normal.png" alt="Publicações Eletrônicas">
+                </div>
+                <div class="menu-row">
+                  <img src="./img/menu/bt4normal.png" alt="Publicações Eletrônicas">
+                </div>
+                <div class="menu-row">
+                  <img src="./img/menu/bt5normal.png" alt="Publicações Eletrônicas">
+                </div>
+                <div class="menu-row">
+                  <img src="./img/menu/bt6normal.png" alt="Publicações Eletrônicas">
+                </div>
+              </div>
+          </div>
+      </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="imgTitulo">
+                    <img class="img-fluid" src="./img/pages/jogos/Titulo.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-11 col-lg-10">
+                <div id="portfoliolist">
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/jogos/jogo-da-memoria/v01">
+                            <!-- caminho na rede \\tlsbr.local\ARQUIVOS\FABRICA\01_projetos\PDR\#16251_game_jogo_da_memória_pre_pago\curso\swf -->
+                            <img class="img-fluid" src="./img/pages/jogos/Curso1.png" />
+                            <div class="portifolio-title light">
+                                <h4>Jogo da Memória<br>Vivo</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/jogos/game-icesp/v01/">
+                            <img class="img-fluid" src="./img/pages/jogos/Curso2.png" />
+                            <div class="portifolio-title light">
+                                <h4>Game Emergência<br>ICESP</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/jogos/jeito-o-boticario-de-atender/v01/">
+                            <img class="img-fluid" src="./img/pages/jogos/Curso3.png" />
+                            <div class="portifolio-title light">
+                                <h4>Jeito O Boticário<br>de Atender</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/jogos/game-porto/v01/">
+                            <img class="img-fluid" src="./img/pages/jogos/Curso4.png" />
+                            <div class="portifolio-title light">
+                                <h4>Game<br>Porto Seguro Auto</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/jogos/questionados/v01/">
+                            <img class="img-fluid" src="./img/pages/jogos/Curso5.png" />
+                            <div class="portifolio-title light">
+                                <h4>Game<br>Questionados - Vivo</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/jogos/tecnoboy/v01/">
+                            <img class="img-fluid" src="./img/pages/jogos/Curso6.png" />
+                            <div class="portifolio-title light">
+                                <h4>Tecno Boy - Vivo</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/jogos/batalha-naval/v01/">
+                            <img class="img-fluid" src="./img/pages/jogos/Curso7.png" />
+                            <div class="portifolio-title light">
+                                <h4>Batalha Naval - Vivo</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/jogos/animais-vs-zumbi/v01/">
+                            <img class="img-fluid" src="./img/pages/jogos/Curso8.png" />
+                            <div class="portifolio-title light">
+                                <h4>Animais vs Zumbis - Vivo</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/jogos/piloto-aviacao/v01/">
+                            <img class="img-fluid" src="./img/pages/jogos/Curso9.png" />
+                            <div class="portifolio-title light">
+                                <h4>Piloto Aviação</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/jogos/guru/v01/">
+                            <img class="img-fluid" src="./img/pages/jogos/Curso10.png" />
+                            <div class="portifolio-title light">
+                                <h4>Guru - Vivo</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/jogos/latam-procedimentos-ddp/v01/">
+                            <img class="img-fluid" src="./img/pages/jogos/Curso11.png" />
+                            <div class="portifolio-title light">
+                                <h4>Procedimentos DDP - LATAM</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/jogos/latam-apec/v01/">
+                            <img class="img-fluid" src="./img/pages/jogos/Curso12.png" />
+                            <div class="portifolio-title light">
+                                <h4>APEC - LATAM</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim div portifoliolist -->
+            </div>
+            <!-- fim div col -->
+
+            <div class="col-md-1">
+                <div id="filters" class="light">
+                    <div class="filter active" data-filter="all">TODOS</div>
+                    <div class="filter" data-filter=".cat1">HTML</div>
+                    <div class="filter" data-filter=".cat2">FLASH</div>
+                </div>
+            </div>
+
+        </div>
+        <!-- fim div row -->
+    </div>
+    <!-- fim div container -->
+</body>
+
+</html>

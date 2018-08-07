@@ -1,0 +1,207 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background: url(../img/linhaBG_pg_interna.png) center top repeat;
+    background-color: #003f52;
+}
+
+.container-picolo {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+/*
+    estilos cabeçalho da página
+*/
+
+.menu {
+    cursor: pointer;
+}
+
+.imgTitulo {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.marginMenu {
+    margin-top: 20px;
+}
+
+.title {
+    color: #fff;
+    font-size: 70px;
+}
+
+.underlineTitle {
+    color: #00ff87;
+}
+.btnHome img{
+  margin: 15px;
+}
+.btnMenu img{
+  margin: 20px;
+}
+.menu-drop{
+  position: absolute;
+  z-index: 1;
+  background-image: url("../img/menu/fundo.png") !important;
+  margin-top: -9px !important;
+  margin-left: -15px !important;
+  width: 263px;
+}
+.menu-row {
+  height: 55px !important;
+  padding: 2px 0 0px 3px;
+  margin: 0;
+}
+/*
+    estilo do filtro
+*/
+
+#filters {
+    font-size: 16px;
+    display: flex;
+    transform: rotate(90deg);
+    margin-top: 26px;
+}
+
+#filters>div {
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+#filters>div.active {
+    border-radius: 5px;
+    border: 1px solid #00ff87;
+}
+
+/*
+    Estilo do portifolio de imagens
+*/
+
+#portfoliolist {
+    margin-top: 10px;
+}
+
+#portfoliolist .portfolio {
+    width: auto;
+    height: 180px;
+    display: none;
+    margin-bottom: 5%;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 12px 12px 18px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+/*#portfoliolist .portfolio:hover {
+    height: 280px;
+    -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.portfolio .portfolio-content .description {
+    opacity: 0;
+    color: #fff;
+    position: relative !important;
+}
+
+.portfolio .portfolio-content:hover .description {
+    opacity: 1;
+}*/
+
+/*#portfoliolist .portfolio div:hover img {
+    opacity: 0.3;
+}*/
+
+.portfolio-content {
+    position: relative !important;
+    background: #142f38;
+}
+
+.portifolio-title h4 {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    margin-top: -50px;
+}
+
+.portfolio .portfolio-content img {
+    top: 0;
+    position: relative;
+}
+
+/*.portfolio-content:hover .portifolio-title h4 {
+    display: none;
+}*/
+
+.fixed {
+    position: fixed;
+}
+
+.btnVer {
+    display: none;
+    color: #00ff87;
+    background: rgba(0,0,0,0);
+    border: 1px solid #00ff87;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    margin-top: -50px;
+    padding: 5px 20px;
+}
+
+/*Celular deitado */
+/*@media (min-width: 576px)  {
+    .title { font-size: 90px; }
+    .subtitle { font-size: 20px; }
+    #filters { margin-top: 15px; }
+    .portifolio-title h4 { font-size: 20px; }
+}*/
+
+/*Tablet em pé */
+@media (min-width: 768px)  {
+    .title { font-size: 90px; }
+    .subtitle { font-size: 20px; }
+    #filters { margin-top: 7px; }
+    #portfoliolist .portfolio { height: 180px; }
+    .portifolio-title h4 { font-size: 24px; margin-top: -34px; }
+    .btnVer { display: block; margin-top: 20px; }
+}
+
+/*Tablet deitado */
+@media (min-width: 992px)  {
+    .title { font-size: 90px; }
+    .subtitle { font-size: 20px; }
+    #filters { margin-top: 15px; }
+    #portfoliolist .portfolio { height: 180px; }
+    .portifolio-title h4 { font-size: 28px; margin-top: -52px; }
+    .btnVer { display: block; margin-top: 4px; }
+}
+
+/*Desktop ou maior */
+@media (min-width: 1200px) {
+    .title { font-size: 110px; }
+    .subtitle { font-size: 22px; }
+    #filters { margin-top: 26px; }
+    #portfoliolist .portfolio { height: 180px; }
+    .portifolio-title h4 { font-size: 30px; margin-top: -50px;}
+    .btnVer { display: none; }
+}

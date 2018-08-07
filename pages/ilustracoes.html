@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="./css/_stylePaginaInterna.css">
+
+    <!-- <script type="text/javascript" src="./js/main.js"></script> -->
+    <script type="text/javascript">
+        $(function() {
+            var filterList = {
+                init: function() {
+                    // MixItUp plugin
+                    // http://mixitup.io
+                    $('#portfoliolist').mixItUp({
+                        selectors: {
+                            target: '.portfolio',
+                            filter: '.filter'
+                        },
+                        load: {
+                            filter: 'all'
+                        },
+                        animation: {
+                            animateResizeContainer: false,
+                            duration: 500,
+                            nudge: true,
+                            reverseOut: false,
+                            effects: "fade scale(0.01)"
+                        }
+                    });
+                }
+            };
+
+            // Run the show!
+            filterList.init();
+        });
+        $(document).ready(function() {
+          $('.menu-drop').hide();
+          $(".menu").click(function() {
+            // console.log("to aqui");
+            $('.menu-drop').slideToggle(600);
+          });
+          $('.home').click(function() {
+            location.reload();
+          });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container container-picolo">
+      <div class="row justify-content-start">
+          <div class="col-md-3 marginMenu">
+            <div class="row" style="background-image: url(./img/menu/fundoMenu.png);height:61px;width:263px;">
+              <div class="btnHome">
+                <img src="./img/menu/logo_ted.png" alt="" class="home" style="cursor: pointer;">
+              </div>
+              <div class="btnMenu">
+                <img src="./img/menu/menu_icon.png" alt="" class="menu">
+              </div>
+          </div>
+            <!-- <img class="img-fluid menu" src="./img/MenuFechado.png" /> -->
+
+              <div class="menu-drop" >
+                <div class="menu-row">
+                  <img src="./img/menu/bt1normal.png" alt="Publicações Eletrônicas">
+                </div>
+                <div class="menu-row">
+                  <img src="./img/menu/bt2normal.png" alt="Publicações Eletrônicas">
+                </div>
+                <div class="menu-row">
+                  <img src="./img/menu/bt3normal.png" alt="Publicações Eletrônicas">
+                </div>
+                <div class="menu-row">
+                  <img src="./img/menu/bt4normal.png" alt="Publicações Eletrônicas">
+                </div>
+                <div class="menu-row">
+                  <img src="./img/menu/bt5normal.png" alt="Publicações Eletrônicas">
+                </div>
+                <div class="menu-row">
+                  <img src="./img/menu/bt6normal.png" alt="Publicações Eletrônicas">
+                </div>
+              </div>
+          </div>
+      </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="imgTitulo">
+                    <img class="img-fluid" src="./img/pages/ilustracoes/Titulo.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-11 col-lg-10">
+                <div id="portfoliolist">
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="pages/ilustras/ilustra1/">
+                            <img class="img-fluid" src="./img/pages/ilustracoes/Curso1.png" />
+                            <div class="portifolio-title light">
+                                <h4>Aspectos<br>Psicológicos - ICESP</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="pages/ilustras/ilustra2/">
+                            <img class="img-fluid" src="./img/pages/ilustracoes/Curso2.png" />
+                            <div class="portifolio-title light">
+                                <h4>Argumentação<br>Retenção - Vivo</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="pages/ilustras/ilustra3/">
+                            <img class="img-fluid" src="./img/pages/ilustracoes/Curso3.png" />
+                            <div class="portifolio-title light">
+                                <h4>Tutor - Vivo</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="pages/ilustras/ilustra4/">
+                            <img class="img-fluid" src="./img/pages/ilustracoes/Curso4.png" />
+                            <div class="portifolio-title light">
+                                <h4>BASF</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="pages/ilustras/ilustra5/">
+                            <img class="img-fluid" src="./img/pages/ilustracoes/Curso5.png" />
+                            <div class="portifolio-title light">
+                                <h4>Electrolux</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="pages/ilustras/ilustra6/">
+                            <img class="img-fluid" src="./img/pages/ilustracoes/Curso6.png" />
+                            <div class="portifolio-title light">
+                                <h4>KPMG</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="pages/ilustras/ilustra7/">
+                            <img class="img-fluid" src="./img/pages/ilustracoes/Curso7.png" />
+                            <div class="portifolio-title light">
+                                <h4>Sebrae</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- fim div portifoliolist -->
+            </div>
+            <!-- fim div col -->
+
+            <div class="col-md-1">
+                <div id="filters" class="light">
+                    <div class="filter active" data-filter="all">TODOS</div>
+                    <!-- <div class="filter" data-filter=".cat1">HTML</div>
+                    <div class="filter" data-filter=".cat2">FLASH</div> -->
+                </div>
+            </div>
+
+        </div>
+        <!-- fim div row -->
+    </div>
+    <!-- fim div container -->
+</body>
+
+</html>

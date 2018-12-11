@@ -12,10 +12,9 @@ html, body {
     padding-left: 0px !important;
 }
 
-/*
-    estilos cabeçalho da página
-*/
-
+/*======================================================
+    estilos cabecalho
+========================================================*/
 .menu {
     cursor: pointer;
 }
@@ -37,12 +36,18 @@ html, body {
 .underlineTitle {
     color: #00ff87;
 }
+
+/*======================================================
+    estilos menu
+========================================================*/
 .btnHome img{
   margin: 15px;
 }
+
 .btnMenu img{
   margin: 20px;
 }
+
 .menu-drop{
   position: absolute;
   z-index: 1;
@@ -51,15 +56,15 @@ html, body {
   margin-left: -15px !important;
   width: 263px;
 }
-.menu-row {
-  height: 55px !important;
-  padding: 2px 0 0px 3px;
-  margin: 0;
-}
-/*
-    estilo do filtro
-*/
 
+.menu-row {
+    height: 55px !important;
+    padding: 2px 0 0px 3px;
+    margin: 0;
+}
+/*======================================================
+    estilos filtro das imagens
+========================================================*/
 #filters {
     font-size: 16px;
     display: flex;
@@ -78,10 +83,9 @@ html, body {
     border: 1px solid #00ff87;
 }
 
-/*
-    Estilo do portifolio de imagens
-*/
-
+/*======================================================
+    estilo portifolio de imagens
+========================================================*/
 #portfoliolist {
     margin-top: 10px;
 }
@@ -111,9 +115,9 @@ html, body {
 
 .portfolio .portfolio-content:hover .description {
     opacity: 1;
-}*/
+}
 
-/*#portfoliolist .portfolio div:hover img {
+#portfoliolist .portfolio div:hover img {
     opacity: 0.3;
 }*/
 
@@ -123,6 +127,7 @@ html, body {
 }
 
 .portifolio-title h4 {
+    display: block;
     text-align: center;
     color: #fff;
     font-size: 30px;
@@ -132,7 +137,6 @@ html, body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    display: block;
     margin-top: -50px;
 }
 
@@ -150,7 +154,7 @@ html, body {
 }
 
 .btnVer {
-    display: none;
+    display: block;
     color: #00ff87;
     background: rgba(0,0,0,0);
     border: 1px solid #00ff87;
@@ -163,7 +167,6 @@ html, body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    display: block;
     margin-top: -50px;
     padding: 5px 20px;
 }

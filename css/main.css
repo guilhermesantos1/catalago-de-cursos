@@ -59,14 +59,15 @@ html, body {
     margin-left: 15px;
 }
 
-.marginTitulo {
+.titulo {
     margin-top: 160px;
+    margin-left: 25%;
 }
 
-.marginTitulo p {
+.titulo p {
     line-height: 20px;
 }
-.marginTopBotoes {
+.menuBotoes {
     margin-top: 80px;
 }
 
@@ -75,10 +76,66 @@ html, body {
     padding-left: 0px !important;
 }
 
-@media (min-width: 576px)  { .title { font-size: 90px; }  .subtitle { font-size: 20px; } .marginTitulo { margin-top: 60px; } .marginTopBotoes { margin-top: 50px; } } /*Celular deitado */
-@media (min-width: 768px)  { .title { font-size: 90px; }  .subtitle { font-size: 20px; } .marginTitulo { margin-top: 60px; } .marginTopBotoes { margin-top: 50px; } } /*Tablet em pé */
-@media (min-width: 992px)  { .title { font-size: 90px; }  .subtitle { font-size: 20px; } .marginTitulo { margin-top: 60px; } .marginTopBotoes { margin-top: 50px; } } /*Tablet deitado */
-/*@media (min-width: 1200px) { .title { font-size: 110px; } .subtitle { font-size: 22px; } .marginTitulo { margin-top: 160px; } .marginTopBotoes { margin-top: 80px; } } Desktop ou maior */
-@media (min-width: 1200px) { .title { font-size: 90px; } .subtitle { font-size: 20px; } .marginTitulo { margin-top: 60px; } .marginTopBotoes { margin-top: 50px; } }
+.img_horizontal {
+    display: none;
+    margin-top: 10px;
+}
+
+.img_vertical {
+    display: block;
+}
+
+.alignTop {
+    margin-top: 56px;
+}
+
+.sticky-top {
+    top: 30px;
+}
+
+@media (min-width: 320px)  { /*Celular em pé */
+    .title { font-size: 4.5em; }
+    .subtitle { font-size: 1em; }
+    .titulo { margin-top: 60px; margin-left: 3%; }
+    .menuBotoes { margin-top: 50px; }
+    .img_horizontal { display: block; }
+    .img_vertical { display: none; }
+}
+
+@media (min-width: 576px)  { /*Celular deitado */
+    .title { font-size: 90px; }
+    .subtitle { font-size: 20px; }
+    .titulo { margin-top: 60px; margin-left: 5%; }
+    .menuBotoes { margin-top: 50px; }
+    .img_horizontal { display: block; }
+    .img_vertical { display: none; }
+}
+
+@media (min-width: 768px)  { /*Tablet em pé */
+    .title { font-size: 90px; }
+    .subtitle { font-size: 20px; }
+    .titulo { margin-top: 60px; margin-left: 19%; }
+    .menuBotoes { margin-top: 50px; }
+    .img_horizontal {display: block;}
+    .img_vertical { display: none; }
+}
+
+@media (min-width: 992px)  { /*Tablet deitado */
+    .title { font-size: 90px; }
+    .subtitle { font-size: 20px; }
+    .titulo { margin-top: 60px; margin-left: 25%; }
+    .menuBotoes { margin-top: 50px; }
+    .img_horizontal {display: none;}
+    .img_vertical { display: block; }
+}
+
+@media (min-width: 1200px) { /*Desktop ou maior */
+    .title { font-size: 90px; }
+    .subtitle { font-size: 20px; }
+    .titulo { margin-top: 60px; margin-left: 29%; }
+    .menuBotoes { margin-top: 50px; }
+    .img_horizontal {display: none;}
+    .img_vertical { display: block; }
+}
 
 /*---------------------------------------------------------------------------------------------------------*/

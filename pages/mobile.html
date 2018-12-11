@@ -7,55 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="./css/_stylePaginaInterna.css">
-
-    <script type="text/javascript">
-
-        $(function() {
-
-            var filterList = {
-
-                init: function() {
-
-                    // MixItUp plugin
-                    // http://mixitup.io
-                    $('#portfoliolist').mixItUp({
-                        selectors: {
-                            target: '.portfolio'
-                        },
-                        load: {
-                            filter: 'all'
-                        },
-                        animation: {
-                            animateResizeContainer: false,
-                            duration: 500,
-                            nudge: true,
-                            reverseOut: false,
-                            effects: "fade scale(0.01)"
-                        }
-                    });
-
-                }
-
-            };
-
-            // Run the show!
-            filterList.init();
-        });
-
-        // $(document).ready(function(){
-        //
-        // });
-        $(document).ready(function() {
-          $('.menu-drop').hide();
-          $(".menu").click(function() {
-            // console.log("to aqui");
-            $('.menu-drop').slideToggle(600);
-          });
-          $('.home').click(function() {
-            location.reload();
-          });
-        });
-    </script>
 </head>
 
 <body>
@@ -106,85 +57,136 @@
         <div class="row justify-content-center">
             <div class="col-md-11 col-lg-10">
                 <div id="portfoliolist">
-                        <!-- <div class="portfolio cat3">
-                            <div class="portfolio-content" data-linkOpen="#">
-                                <img class="img-fluid" src="./img/pages/mobile/Curso1.png" />
-                                <div class="portifolio-title light">
-                                    <h4>Porto Seguro Táxi</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <div class="portfolio cat2">
-                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/angola/unidade-16/ciencias/">
-                                <img class="img-fluid" src="./img/pages/mobile/Curso2.png" />
-                                <div class="portifolio-title light">
-                                    <h4>Localização Temporal<br>e Espacial - ProFuturo</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
+                    <!-- <div class="portfolio cat3">
+                        <div class="portfolio-content" data-linkOpen="#">
+                            <img class="img-fluid" src="./img/pages/mobile/Curso1.png" />
+                            <div class="portifolio-title light">
+                                <h4>Porto Seguro Táxi</h4>
+                                <button class="btnVer light" type="button">VER</button>
                             </div>
                         </div>
+                    </div> -->
 
-                        <div class="portfolio cat2">
-                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/matematica-financeira/v01/">
-                                <img class="img-fluid" src="./img/pages/mobile/Curso3.png" />
-                                <div class="portifolio-title light">
-                                    <h4>Matemática<br>Financeira - Deloitte</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/angola/unidade-16/ciencias/">
+                            <img class="img-fluid" src="./img/pages/mobile/Curso2.png" />
+                            <div class="portifolio-title light">
+                                <h4>Localização Temporal<br>e Espacial - ProFuturo</h4>
+                                <button class="btnVer light" type="button">VER</button>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- <div class="portfolio cat3">
-                            <div class="portfolio-content" data-linkOpen="#">
-                                <img class="img-fluid" src="./img/pages/mobile/Curso4.png" />
-                                <div class="portifolio-title light">
-                                    <h4>Porto Seguro Moto</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <div class="portfolio cat3">
-                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/odontoprev/bin/">
-                                <img class="img-fluid" src="./img/pages/mobile/Curso5.png" />
-                                <div class="portifolio-title light">
-                                    <h4>Sustentabilidade<br>Odontoprev</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/matematica-financeira/v01/">
+                            <img class="img-fluid" src="./img/pages/mobile/Curso3.png" />
+                            <div class="portifolio-title light">
+                                <h4>Matemática<br>Financeira - Deloitte</h4>
+                                <button class="btnVer light" type="button">VER</button>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="portfolio cat1">
-                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/historia-em-quadrinhos/v01/">
-                                <img class="img-fluid" src="./img/pages/mobile/Curso6.png" />
-                                <div class="portifolio-title light">
-                                    <h4>História em Quadrinhos<br>Escolas Rurais</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
+                    <!-- <div class="portfolio cat3">
+                        <div class="portfolio-content" data-linkOpen="#">
+                            <img class="img-fluid" src="./img/pages/mobile/Curso4.png" />
+                            <div class="portifolio-title light">
+                                <h4>Porto Seguro Moto</h4>
+                                <button class="btnVer light" type="button">VER</button>
                             </div>
                         </div>
+                    </div> -->
 
-                        <div class="portfolio cat3">
-                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/automovel-itau/v01/curso/">
-                                <img class="img-fluid" src="./img/pages/mobile/Curso7.png" />
-                                <div class="portifolio-title light">
-                                    <h4>Automóvel Itaú</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
+                    <div class="portfolio cat3">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/odontoprev/bin/">
+                            <img class="img-fluid" src="./img/pages/mobile/Curso5.png" />
+                            <div class="portifolio-title light">
+                                <h4>Sustentabilidade<br>Odontoprev</h4>
+                                <button class="btnVer light" type="button">VER</button>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="portfolio cat3">
-                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/ps-premium/curso/">
-                                <img class="img-fluid" src="./img/pages/mobile/Curso8.png" />
-                                <div class="portifolio-title light">
-                                    <h4>Porto Seguro<br>Auto Premium</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/historia-em-quadrinhos/v01/">
+                            <img class="img-fluid" src="./img/pages/mobile/Curso6.png" />
+                            <div class="portifolio-title light">
+                                <h4>História em Quadrinhos<br>Escolas Rurais</h4>
+                                <button class="btnVer light" type="button">VER</button>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="portfolio cat3">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/automovel-itau/v01/curso/">
+                            <img class="img-fluid" src="./img/pages/mobile/Curso7.png" />
+                            <div class="portifolio-title light">
+                                <h4>Automóvel Itaú</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat3">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/ps-premium/curso/">
+                            <img class="img-fluid" src="./img/pages/mobile/Curso8.png" />
+                            <div class="portifolio-title light">
+                                <h4>Porto Seguro<br>Auto Premium</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat4">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/one_page_electrolux_mb38p/">
+                            <img class="img-fluid" src="./img/pages/mobile/Curso10.png" />
+                            <div class="portifolio-title light">
+                                <h4>Electrolux Microondas<br>MB38P</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat4">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/one_page_electrolux_dm85x/">
+                            <img class="img-fluid" src="./img/pages/mobile/Curso9.png" />
+                            <div class="portifolio-title light">
+                                <h4>Elextrolux Refrigerador<br>DM85X</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat4">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/one_page_electrolux-76rss/">
+                            <img class="img-fluid" src="./img/pages/mobile/curso12.png" />
+                            <div class="portifolio-title light">
+                                <h4>Elextrolux Fogão<br>76RSS</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat4">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/one_page_electrolux_db53x/">
+                            <img class="img-fluid" src="./img/pages/mobile/curso13.png" />
+                            <div class="portifolio-title light">
+                                <h4>Elextrolux Geladeira<br>DB53X</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat4">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/curso-mobile/one_page_electrolux_vi_ve09_fr/">
+                            <img class="img-fluid" src="./img/pages/mobile/curso11.png" />
+                            <div class="portifolio-title light">
+                                <h4>Elextrolux Ar Condicionado<br>VI/VE09 - F/R</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <!-- fim class portifoliolist -->
             </div>
@@ -195,6 +197,7 @@
                     <div class="filter" data-filter=".cat1">BAIXA</div>
                     <div class="filter" data-filter=".cat2">MÉDIA</div>
                     <div class="filter" data-filter=".cat3">ALTA</div>
+                    <div class="filter" data-filter=".cat4">ONEPAGE</div>
                 </div>
             </div>
         </div>

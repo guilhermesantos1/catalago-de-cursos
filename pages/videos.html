@@ -7,55 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="./css/_stylePaginaInterna.css">
-
-    <script type="text/javascript">
-        $(function() {
-            var filterList = {
-                init: function() {
-                    // MixItUp plugin
-                    // http://mixitup.io
-                    $('#portfoliolist').mixItUp({
-                        selectors: {
-                            target: '.portfolio',
-                            filter: '.filter'
-                        },
-                        load: {
-                            filter: 'all'
-                        },
-                        animation: {
-                            animateResizeContainer: false,
-                            duration: 500,
-                            nudge: true,
-                            reverseOut: false,
-                            effects: "fade scale(0.01)"
-                        }
-                    });
-                }
-            };
-
-            // Run the show!
-            filterList.init();
-        });
-
-        // assim que carregar a pagina
-        $(document).ready(function() {
-            $('.menu-drop').hide();
-            $(".menu").click(function() {
-                // console.log("to aqui");
-                $('.menu-drop').slideToggle(600);
-            });
-
-            $('.home').click(function() {
-                location.reload();
-            });
-            $("#menuBtn").click(function() {
-                console.log("dsadsa");
-            });
-        });
-
-        var menu = document.getElementsByClassName('menu-drop');
-
-    </script>
 </head>
 
 <body>
@@ -300,6 +251,67 @@
                             <img class="img-fluid" src="./img/pages/videos/Curso20.png" />
                             <div class="portifolio-title light">
                                 <h4>Realidade<br>Virtual(RV)</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/electrolux_video_animacao/">
+                            <img class="img-fluid" src="./img/pages/videos/Curso21.png" />
+                            <div class="portifolio-title light">
+                                <h4>Vídeo Animação - Electrolux</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/animacao_topologia_de_rede_interna_fibra_otica/">
+                            <img class="img-fluid" src="./img/pages/videos/os_animacao_topologia_59536.png" />
+                            <div class="portifolio-title light">
+                                <h4>Animação Topologia de<br>Rede Interna - Fibra Ótica</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/tutorial_animado_certificacao_open_plataform/">
+                            <img class="img-fluid" src="./img/pages/videos/tutorial_animado_iptv59540.png" />
+                            <div class="portifolio-title light">
+                                <h4>Tutorial Animado Certificação<br>Open Plataform - IPTV</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/grupo_televendas_novo_cliente/">
+                            <img class="img-fluid" src="./img/pages/videos/grupo_televendas_novo_cliente_74742.png" />
+                            <div class="portifolio-title light">
+                                <h4>Grupo Televendas<br>Novo Cliente</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/videoaula_anbima/">
+                            <img class="img-fluid" src="./img/pages/videos/curso_73856.png" />
+                            <div class="portifolio-title light">
+                                <h4>Conceito VaR<br>ANBIMA</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat3">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/videos/videoscribe_anbima/">
+                            <img class="img-fluid" src="./img/pages/videos/curso73866.png" />
+                            <div class="portifolio-title light">
+                                <h4>VaR de Instrumentos<br>Não Lineares - ANBIMA</h4>
                                 <button class="btnVer light" type="button">VER</button>
                             </div>
                         </div>

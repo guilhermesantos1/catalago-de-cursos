@@ -7,90 +7,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="./css/_stylePaginaInterna.css">
-
-    <script type="text/javascript">
-
-        $(function() {
-
-            var filterList = {
-
-                init: function() {
-
-                    // MixItUp plugin
-                    // http://mixitup.io
-                    $('#portfoliolist').mixItUp({
-                        selectors: {
-                            target: '.portfolio'
-                        },
-                        load: {
-                            filter: 'all'
-                        },
-                        animation: {
-                            animateResizeContainer: false,
-                            duration: 500,
-                            nudge: true,
-                            reverseOut: false,
-                            effects: "fade scale(0.01)"
-                        }
-                    });
-
-                }
-
-            };
-
-            // Run the show!
-            filterList.init();
-        });
-
-        // $(document).ready(function(){
-        //
-        // });
-        $(document).ready(function() {
-          $('.menu-drop').hide();
-          $(".menu").click(function() {
-            // console.log("to aqui");
-            $('.menu-drop').slideToggle(600);
-          });
-          $('.home').click(function() {
-            location.reload();
-          });
-        });
-    </script>
 </head>
 
 <body>
     <div class="container container-picolo">
         <div class="row justify-content-start">
             <div class="col-md-3 marginMenu">
-              <div class="row" style="background-image: url(./img/menu/fundoMenu.png);height:61px;width:263px;">
-                <div class="btnHome">
-                  <img src="./img/menu/logo_ted.png" alt="" class="home" style="cursor: pointer;">
+                <div class="row" style="background-image: url(./img/menu/fundoMenu.png);height:61px;width:263px;">
+                    <div class="btnHome">
+                      <img src="./img/menu/logo_ted.png" alt="" class="home" style="cursor: pointer;">
+                    </div>
+                    <div class="btnMenu">
+                      <img src="./img/menu/menu_icon.png" alt="" class="menu">
+                    </div>
                 </div>
-                <div class="btnMenu">
-                  <img src="./img/menu/menu_icon.png" alt="" class="menu">
-                </div>
-            </div>
-              <!-- <img class="img-fluid menu" src="./img/MenuFechado.png" /> -->
+                <!-- <img class="img-fluid menu" src="./img/MenuFechado.png" /> -->
 
                 <div class="menu-drop" >
-                  <div class="menu-row">
-                    <img src="./img/menu/bt1normal.png" alt="Publicações Eletrônicas">
-                  </div>
-                  <div class="menu-row">
-                    <img src="./img/menu/bt2normal.png" alt="Publicações Eletrônicas">
-                  </div>
-                  <div class="menu-row">
-                    <img src="./img/menu/bt3normal.png" alt="Publicações Eletrônicas">
-                  </div>
-                  <div class="menu-row">
-                    <img src="./img/menu/bt4normal.png" alt="Publicações Eletrônicas">
-                  </div>
-                  <div class="menu-row">
-                    <img src="./img/menu/bt5normal.png" alt="Publicações Eletrônicas">
-                  </div>
-                  <div class="menu-row">
-                    <img src="./img/menu/bt6normal.png" alt="Publicações Eletrônicas">
-                  </div>
+                    <div class="menu-row" data-menu="1">
+                        <img src="./img/menu/bt1normal.png" alt="Publicações Eletrônicas">
+                    </div>
+                    <div class="menu-row" data-menu="2">
+                        <img src="./img/menu/bt2normal.png" alt="Vídeos">
+                    </div>
+                    <div class="menu-row" data-menu="3">
+                        <img src="./img/menu/bt3normal.png" alt="Jogos">
+                    </div>
+                    <div class="menu-row" data-menu="4">
+                        <img src="./img/menu/bt4normal.png" alt="Ilustrações">
+                    </div>
+                    <div class="menu-row" data-menu="5">
+                        <img src="./img/menu/bt5normal.png" alt="Mobile">
+                    </div>
+                    <div class="menu-row" data-menu="6">
+                        <img src="./img/menu/bt6normal.png" alt="Cursos Customizados">
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,95 +57,145 @@
         <div class="row justify-content-center">
             <div class="col-md-11 col-lg-10">
                 <div id="portfoliolist">
-                        <div class="portfolio cat2">
-                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/revista-vivo-em-melhoria-2-edicao/v01/">
-                                <img class="img-fluid" src="./img/pages/publicacoes/Curso1.png" />
-                                <div class="portifolio-title light">
-                                    <h4>Vivo em Melhoria<br>2ª Edição</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/revista-vivo-em-melhoria-2-edicao/v01/">
+                            <img class="img-fluid" src="./img/pages/publicacoes/Curso1.png" />
+                            <div class="portifolio-title light">
+                                <h4>Vivo em Melhoria<br>2ª Edição</h4>
+                                <button class="btnVer light" type="button">VER</button>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="portfolio cat2">
-                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/revista-diginews-2-edicao/v01/">
-                                <img class="img-fluid" src="./img/pages/publicacoes/Curso2.png" />
-                                <div class="portifolio-title light">
-                                    <h4>Dignews<br>2ª Edição</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/revista-diginews-2-edicao/v01/">
+                            <img class="img-fluid" src="./img/pages/publicacoes/Curso2.png" />
+                            <div class="portifolio-title light">
+                                <h4>Dignews<br>2ª Edição</h4>
+                                <button class="btnVer light" type="button">VER</button>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="portfolio cat1">
-                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/script-matriz/v01/">
-                                <img class="img-fluid" src="./img/pages/publicacoes/Curso3.png" />
-                                <div class="portifolio-title light">
-                                    <h4>Script Matriz - Vivo</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/script-matriz/v01/">
+                            <img class="img-fluid" src="./img/pages/publicacoes/Curso3.png" />
+                            <div class="portifolio-title light">
+                                <h4>Script Matriz - Vivo</h4>
+                                <button class="btnVer light" type="button">VER</button>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="portfolio cat1">
-                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/servicos-e-produtos-vivo/v01/">
-                                <img class="img-fluid" src="./img/pages/publicacoes/Curso4.png" />
-                                <div class="portifolio-title light">
-                                    <h4>Serviços e Produtos<br>Vivo</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/servicos-e-produtos-vivo/v01/">
+                            <img class="img-fluid" src="./img/pages/publicacoes/Curso4.png" />
+                            <div class="portifolio-title light">
+                                <h4>Serviços e Produtos<br>Vivo</h4>
+                                <button class="btnVer light" type="button">VER</button>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="portfolio cat1">
-                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/processos-de-contas-vivo/v01/">
-                                <img class="img-fluid" src="./img/pages/publicacoes/Curso5.png" />
-                                <div class="portifolio-title light">
-                                    <h4>Processos de<br>Contas - Vivo</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/processos-de-contas-vivo/v01/">
+                            <img class="img-fluid" src="./img/pages/publicacoes/Curso5.png" />
+                            <div class="portifolio-title light">
+                                <h4>Processos de<br>Contas - Vivo</h4>
+                                <button class="btnVer light" type="button">VER</button>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="portfolio cat1">
-                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/itinerarios-formativos-scolartic/v01/">
-                                <img class="img-fluid" src="./img/pages/publicacoes/Curso6.png" />
-                                <div class="portifolio-title light">
-                                    <h4>Itinerários Formativos<br>Scolartic</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/itinerarios-formativos-scolartic/v01/">
+                            <img class="img-fluid" src="./img/pages/publicacoes/Curso6.png" />
+                            <div class="portifolio-title light">
+                                <h4>Itinerários Formativos<br>Scolartic</h4>
+                                <button class="btnVer light" type="button">VER</button>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="portfolio cat2">
-                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/pocket-inteligencia-comercial-e-prospeccao/v01/">
-                                <img class="img-fluid" src="./img/pages/publicacoes/Curso7.png" />
-                                <div class="portifolio-title light">
-                                    <h4>Pocket Inteligência<br>Comercial - DISAL</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/pocket-inteligencia-comercial-e-prospeccao/v01/">
+                            <img class="img-fluid" src="./img/pages/publicacoes/Curso7.png" />
+                            <div class="portifolio-title light">
+                                <h4>Pocket Inteligência<br>Comercial - DISAL</h4>
+                                <button class="btnVer light" type="button">VER</button>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="portfolio cat2">
-                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/ead-para-jovens-no-brasil-ciee/v01/">
-                                <img class="img-fluid" src="./img/pages/publicacoes/Curso8.png" />
-                                <div class="portifolio-title light">
-                                    <h4>EAD para Jovens<br>no Brasil - CIEE</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/ead-para-jovens-no-brasil-ciee/v01/">
+                            <img class="img-fluid" src="./img/pages/publicacoes/Curso8.png" />
+                            <div class="portifolio-title light">
+                                <h4>EAD para Jovens<br>no Brasil - CIEE</h4>
+                                <button class="btnVer light" type="button">VER</button>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="portfolio cat2">
-                            <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/formatacao/v01/">
-                                <img class="img-fluid" src="./img/pages/publicacoes/Curso9.png" />
-                                <div class="portifolio-title light">
-                                    <h4>Trilha do<br>Conhecimento - KPMG</h4>
-                                    <button class="btnVer light" type="button">VER</button>
-                                </div>
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/formatacao/v01/">
+                            <img class="img-fluid" src="./img/pages/publicacoes/Curso9.png" />
+                            <div class="portifolio-title light">
+                                <h4>Trilha do<br>Conhecimento - KPMG</h4>
+                                <button class="btnVer light" type="button">VER</button>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="portfolio cat2">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/revista_interativa_vivo_fideliza/">
+                            <img class="img-fluid" src="./img/pages/publicacoes/revista_vivo_fideliza_68104.png" />
+                            <div class="portifolio-title light">
+                                <h4>Revista Interativa<br>Vivo Fideliza</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/infografico_movel_vivo/">
+                            <img class="img-fluid" src="./img/pages/publicacoes/infografico_movel_75109.png" />
+                            <div class="portifolio-title light">
+                                <h4>Infográfico Móvel - Vivo</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/infografico_anbima/">
+                            <img class="img-fluid" src="./img/pages/publicacoes/curso_73857.png" />
+                            <div class="portifolio-title light">
+                                <h4>Infográfico VaR - ANBIMA</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/hq_normas_e_procedimentos_de_seguranca/">
+                            <img class="img-fluid" src="./img/pages/publicacoes/hq_normas_e_procedimentos_70189.png" />
+                            <div class="portifolio-title light">
+                                <h4>HQ Normas e Procedimentos<br>de Segurança - Vivo</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/publicacoes/infografico_vivo_fideliza/">
+                            <img class="img-fluid" src="./img/pages/publicacoes/infografico_68468.png" />
+                            <div class="portifolio-title light">
+                                <h4>Infográfico Interativo<br>Vivo Fideliza</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- fim class portifoliolist -->
             </div>

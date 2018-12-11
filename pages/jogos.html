@@ -7,47 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="./css/_stylePaginaInterna.css">
-
-    <!-- <script type="text/javascript" src="./js/main.js"></script> -->
-    <script type="text/javascript">
-        $(function() {
-            var filterList = {
-                init: function() {
-                    // MixItUp plugin
-                    // http://mixitup.io
-                    $('#portfoliolist').mixItUp({
-                        selectors: {
-                            target: '.portfolio',
-                            filter: '.filter'
-                        },
-                        load: {
-                            filter: 'all'
-                        },
-                        animation: {
-                            animateResizeContainer: false,
-                            duration: 500,
-                            nudge: true,
-                            reverseOut: false,
-                            effects: "fade scale(0.01)"
-                        }
-                    });
-                }
-            };
-
-            // Run the show!
-            filterList.init();
-        });
-        $(document).ready(function() {
-          $('.menu-drop').hide();
-          $(".menu").click(function() {
-            // console.log("to aqui");
-            $('.menu-drop').slideToggle(600);
-          });
-          $('.home').click(function() {
-            location.reload();
-          });
-        });
-    </script>
 </head>
 
 <body>
@@ -218,6 +177,17 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/jogos/game_equipamentos_de_protecao_nps/">
+                            <img class="img-fluid" src="./img/pages/jogos/game_equipamento_de_protecao_nps_72629.png" />
+                            <div class="portifolio-title light">
+                                <h4>Game Equipamentos<br>de Proteção - NPS</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <!-- fim div portifoliolist -->
             </div>

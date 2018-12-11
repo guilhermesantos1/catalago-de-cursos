@@ -7,46 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="./css/_stylePaginaInterna.css">
-
-    <script type="text/javascript">
-        $(function() {
-            var filterList = {
-                init: function() {
-                    // MixItUp plugin
-                    // http://mixitup.io
-                    $('#portfoliolist').mixItUp({
-                        selectors: {
-                            target: '.portfolio',
-                            filter: '.filter'
-                        },
-                        load: {
-                            filter: 'all'
-                        },
-                        animation: {
-                            animateResizeContainer: false,
-                            duration: 500,
-                            nudge: true,
-                            reverseOut: false,
-                            effects: "fade scale(0.01)"
-                        }
-                    });
-                }
-            };
-
-            // Run the show!
-            filterList.init();
-        });
-        $(document).ready(function() {
-          $('.menu-drop').hide();
-          $(".menu").click(function() {
-            // console.log("to aqui");
-            $('.menu-drop').slideToggle(600);
-          });
-          $('.home').click(function() {
-            location.reload();
-          });
-        });
-    </script>
 </head>
 
 <body>
@@ -196,6 +156,37 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/cursos/curso_pro_rata/">
+                            <img class="img-fluid" src="./img/pages/cursos/curso_43029.png" />
+                            <div class="portifolio-title light">
+                                <h4>Curso Pró-rata - Vivo</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/cursos/curso_anbima/">
+                            <img class="img-fluid" src="./img/pages/cursos/curso_73851.png" />
+                            <div class="portifolio-title light">
+                                <h4>Riscos: Conceitos Básicos<br>ANBIMA</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio cat1">
+                        <div class="portfolio-content" data-linkOpen="http://validacoes.tlsbr.com/catalogo_fabrica/conteudo-catalogo/cursos/hq_interativo_recapitulando/">
+                            <img class="img-fluid" src="./img/pages/cursos/HQ_interativo_59986.png" />
+                            <div class="portifolio-title light">
+                                <h4>HQ Interativo</h4>
+                                <button class="btnVer light" type="button">VER</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <!-- fim div portifoliolist -->
             </div>
